@@ -92,6 +92,7 @@ body {
 
 .parte-formulario {
     background-color: #3E2723;
+    border-top: solid 10px #2E4F4F;
     width: 100%;
     height: 600px;
     display: flex;
@@ -114,8 +115,13 @@ body {
 }
 
 .texto-formulario {
+    font-size: 25px;
     padding: 20px;
     text-align: center;
+}
+
+.formulario p {
+    padding: 10px;
 }
 
 .formulario form {
@@ -140,7 +146,9 @@ body {
     color: #F5F5DC;
     background-color: #2E4F4F;
     border: #2E4F4F;
-    height: 25px;
-    width: 50px;
+    height: 40px;
+    width: 100px;
     border-radius: 10px;
+    margin: 15px;
+    font-size: 20px;
 }
