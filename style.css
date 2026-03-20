@@ -19,7 +19,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 30px;
-    font-size: 25px; 
+    font-size: 22px; 
     padding: 25px;
 }
 
@@ -37,6 +37,7 @@ body {
     justify-content: center;
     flex-direction: row;
     gap: 20px;
+    padding: 40px;
 }
 
 .card-produto {
@@ -44,37 +45,60 @@ body {
     background-color: #3E2723;
     color: #F5F5DC;
     width: 350px;
-    height: 450px;
+    height: 470px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow: hidden;
     flex-direction: column;
     border-radius: 10px;
+    margin: 20px;
     margin-bottom: 40px;
     font-size: 20px;
+    box-shadow: 0 10px 20px #2E4F4F;
+    transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px #2E4F4F;
 }
 
 .card-produto img{
     width: 350px;
-    height: 300;
+    height: 50%;
+    object-fit: cover;
 }
 
-.card-produto a{
+.card-produto a {
     color: #3E2723;
     background-color: #2E4F4F;
     border: solid 2px #2E4F4F;
     border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    text-align: center;
+    margin: 20px;
+}
+
+.card-produto h4 {
+    text-align: center;
+    padding: 20px;
 }
 
 .parte-formulario {
     background-color: #3E2723;
     width: 100%;
-    height: 400px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 20px;
 }
 
 .formulario {
@@ -82,11 +106,16 @@ body {
     border: solid 2px #F5F5DC;
     color: #2E4F4F;
     border-radius: 10px;
-    height: 300px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.texto-formulario {
+    padding: 20px;
+    text-align: center;
 }
 
 .formulario form {
@@ -97,6 +126,21 @@ body {
 }
 
 .formulario input {
-    height: 40px;
+    height: 35px;
     width: 250px;
+}
+
+.formulario textarea {
+    height: 100px;
+    width: 250px;
+    resize: none;
+}
+
+.formulario button {
+    color: #F5F5DC;
+    background-color: #2E4F4F;
+    border: #2E4F4F;
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
 }
