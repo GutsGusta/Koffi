@@ -15,7 +15,7 @@ body {
     border-bottom: solid 5px #2E4F4F;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-around;
     flex-direction: row;
 }
 
@@ -24,7 +24,6 @@ body {
 }
 
 .cabecalho a {
-    background-color: #2E4F4F;
     color: white;
     display: flex;
     align-items: center;
@@ -37,6 +36,13 @@ body {
     margin-right: 30px;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
 .pagina-inteira {
     display: flex;
     align-items: center;
