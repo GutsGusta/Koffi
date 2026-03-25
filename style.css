@@ -15,7 +15,7 @@ body {
     border-bottom: solid 5px #2E4F4F;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 }
 
@@ -83,7 +83,7 @@ nav {
 
 .linha-titulo {
     border: solid 2px #2E4F4F;
-    width: 780px;
+    width: 800px;
     margin: 20px;
 }
 
@@ -150,6 +150,7 @@ nav {
 .botao-card:hover {
     transform: scale(1.1);
 }
+
 .card-produto h4 {
     text-align: center;
     padding: 20px;
