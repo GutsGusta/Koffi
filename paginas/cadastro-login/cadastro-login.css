@@ -102,3 +102,37 @@ nav {
 .formulario a {
     color: #2E4F4F;
 }
+
+/*FOOTER*/
+
+.footer-completo {
+    background-color: #2E4F4F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.parte-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.parte-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.linha-footer {
+    background-color: #3E2723;
+    width: 3px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
