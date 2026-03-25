@@ -88,10 +88,15 @@ nav {
 .botao-comprar {
     background-color: #3E2723;
     color: white;
-    border: solid 2px #3E2723;
+    border: solid 8px #3E2723;
     border-radius: 20px;
     text-decoration: none;
     font-size: 35px;
+    transition: transform 0.3s ease;
+}
+
+.botao-comprar:hover {
+    transform: scale(1.1);
 }
 
 .linha {
