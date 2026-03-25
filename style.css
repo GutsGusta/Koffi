@@ -41,6 +41,15 @@ nav {
     justify-content: center;
     flex-direction: row;
     gap: 10px; 
+    
+}
+
+.botao-cabecalho {
+    transition: transform 0.3s ease;
+}
+
+.botao-cabecalho:hover {
+    transform: scale(1.1);
 }
 
 .titulo {

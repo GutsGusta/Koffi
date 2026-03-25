@@ -42,6 +42,14 @@ nav {
     flex-direction: row;
 }
 
+.botao-cabecalho {
+    transition: transform 0.3s ease;
+}
+
+.botao-cabecalho:hover {
+    transform: scale(1.1);
+}
+
 .pagina-inteira {
     display: flex;
     align-items: center;
