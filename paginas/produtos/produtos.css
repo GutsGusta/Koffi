@@ -110,6 +110,10 @@ nav {
     margin-bottom: 10px;
 }
 
+.card-produto p {
+    padding: 20px;
+}
+
 .botao-card {
     color: white;
     background-color: #2E4F4F;
