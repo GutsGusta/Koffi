@@ -51,6 +51,21 @@ nav {
     transform: scale(1.1);
 }
 
+.categorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.categorias a {
+    background-color: #3E2723;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 .titulo-produtos {
     display: flex;
     justify-content: center;
