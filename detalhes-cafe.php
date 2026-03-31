@@ -7,8 +7,8 @@ include 'data.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/detalhes-produtos.css">
-    <link rel="icon" type="image/x-icon" href="../../imagens/Koffi-Icon.png">
-    <title>Café Expresso</title>
+    <link rel="icon" type="image/x-icon" href="imagens/Koffi-Icon.png">
+    <title>Café Expresso - <?php echo $nomeloja; ?></title>
 </head>
 <body>
     <?php

@@ -8,7 +8,7 @@ include 'data.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="icon" type="image/x-icon" href="imagens/Koffi-Icon.png">
-    <title><?php echo $nomeloja; ?></title>
+    <title>Produtos - <?php echo $nomeloja; ?></title>
 </head>
 <body>
     <?php
@@ -28,7 +28,7 @@ include 'data.php';
                 <h4>Café expresso</h4>
                 <h5>R$4,00</h5>
                 <p>A alma da Koffi em uma dose intensa, com crema aveludada e notas profundas que despertam os sentidos.</p>
-                <a href="../detalhe-produtos/detalhes-cafe.php" class="botao-card">Comprar agora</a>
+                <a href="detalhes-cafe.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">
@@ -36,7 +36,7 @@ include 'data.php';
                 <h4>Donut</h4>
                 <h5>R$4,00</h5>
                 <p>Uma massa brioche incrivelmente leve e aerada, com o equilíbrio perfeito entre doçura e maciez.</p>
-                <a href="../detalhe-produtos/detalhes-donut.php" class="botao-card">Comprar agora</a>
+                <a href="detalhes-donut.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">
@@ -44,7 +44,7 @@ include 'data.php';
                 <h4>Donut + Café expresso</h4>
                 <h5>R$7,00</h5>
                 <p>A harmonização definitiva onde o vigor do café encontra a delicadeza do doce para uma experiência completa.</p>
-                <a href="../detalhe-produtos/detalhes-cafe-donut.php" class="botao-card">Comprar agora</a>
+                <a href="detalhes-cafe-donut.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">

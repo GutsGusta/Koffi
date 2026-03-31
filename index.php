@@ -39,7 +39,7 @@ include 'data.php';
                 <h4>Café expresso</h4>
                 <h5>R$4,00</h5>
                 <p>Curto, intenso e com crema aveludada. A tradução mais pura do nosso grão selecionado, moído na hora para despertar seus sentidos.</p>
-                <a href="./paginas/detalhe-produtos/detalhes-cafe.php" class="botao-card">Comprar agora</a>
+                <a href="detalhes-cafe.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">
@@ -47,7 +47,7 @@ include 'data.php';
                 <h4>Donut</h4>
                 <h5>R$4,00</h5>
                 <p>Massa artesanal, macia como nuvem e feita à mão. O equilíbrio perfeito entre a doçura e o conforto que você merece.</p>
-                <a href="./paginas/detalhe-produtos/detalhes-donut.php" class="botao-card">Comprar agora</a>
+                <a href="detalhes-donut.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">
@@ -55,7 +55,7 @@ include 'data.php';
                 <h4>Donut + Café expresso</h4>
                 <h5>R$7,00</h5>
                 <p>Onde o amargor sofisticado do café encontra o abraço doce do donut. Um encontro de sabores que transforma o seu dia.</p>
-                <a href="./paginas/detalhe-produtos/detalhes-cafe-donut.php" class="botao-card">Comprar agora</a>
+                <a href="detalhes-cafe-donut.php" class="botao-card">Comprar agora</a>
             </article>
         </div>
         <div class="parte-formulario">

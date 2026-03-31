@@ -8,7 +8,7 @@ include 'data.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cadastro-login.css">
     <link rel="icon" type="image/x-icon" href="../../imagens/Koffi-Icon.png">
-    <title>Cadastro - Koffi</title>
+    <title>Cadastro - <?php echo $nomeloja; ?></title>
 </head>
 <body>
     <?php
