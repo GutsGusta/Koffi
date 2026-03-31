@@ -1,37 +1,35 @@
+<?php
+include 'data.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cadastro-login.css">
+    <link rel="stylesheet" href="css/cadastro-login.css">
     <link rel="icon" type="image/x-icon" href="../../imagens/Koffi-Icon.png">
     <title>Login - Koffi</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img src="../../imagens/Koffi-Icon.png">
-        <nav>
-            <a href="../../index.html" class="botao-cabecalho">Koffi</a>
-            <a href="../produtos/produtos.html" class="botao-cabecalho">Produtos</a>
-            <a href="./login.html" class="botao-cabecalho">Entrar</a>
-        </nav>
-    </header>
+    <?php
+        require 'partials/header.php';
+    ?>
 
     <main>
         <div class="pagina-inteira">
             <div class="metade-pagina1">
-                <img src="../../imagens/cafe-login.avif">
+                <img src="imagens/cafe-login.avif">
             </div>
 
             <div class="metade-pagina2">
                 <div class="formulario">
                     <h1>Bem Vindo de volta!</h1>
-                    <form action="../../index.html" method="post">
+                    <form action="../../index.php" method="post">
                         <p>Email</p>
                         <input type="email">
                         <p>Senha</p>
                         <input type="password">
-                        <p>Não possui conta? <a href="./cadastro.html">Cadastre-se</a></p>    
+                        <p>Não possui conta? <a href="./cadastro.php">Cadastre-se</a></p>    
                         <button type="submit">Entrar</button>                    
                     </form>
                 </div>

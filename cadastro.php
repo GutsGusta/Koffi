@@ -1,43 +1,40 @@
+<?php
+include 'data.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cadastro-login.css">
+    <link rel="stylesheet" href="css/cadastro-login.css">
     <link rel="icon" type="image/x-icon" href="../../imagens/Koffi-Icon.png">
     <title>Cadastro - Koffi</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img src="../../imagens/Koffi-Icon.png">
-
-        <nav>
-            <a href="../../index.html" class="botao-cabecalho">Koffi</a>
-            <a href="../produtos/produtos.html" class="botao-cabecalho">Produtos</a>
-            <a href="./login.html" class="botao-cabecalho">Entrar</a>
-        </nav>
-    </header>
+    <?php
+        require 'partials/header.php';
+    ?>
 
     <main>
         <div class="pagina-inteira">
             <div class="metade-pagina1">
-                <img src="../../imagens/cafe-login.avif">
+                <img src="imagens/cafe-login.avif">
             </div>
 
             <div class="metade-pagina2">
                 <div class="formulario">
                     <h1>Bem Vindo de volta!</h1>
-                    <form action="./login.html" method="post">
+                    <form action="receba-cadastro.php" method="post">
                         <p>Nome</p>
-                        <input type="text" placeholder="José Ribeiro">
+                        <input type="text" placeholder="Ex: José Ribeiro" name="nome">
                         <p>Email</p>
-                        <input type="email" placeholder="email@exemplo.com">
+                        <input type="email" placeholder="email@exemplo.com" name="email">
                         <p>Telefone</p>
-                        <input type="tel" placeholder="Ex: 4002-8922">
+                        <input type="tel" placeholder="Ex: 4002-8922" name="telefone">
                         <p>Senha</p>
-                        <input type="password" placeholder="Min: 8 carácteres">
+                        <input type="password" placeholder="Min: 8 carácteres" name="senha">
                         <p>Confirmar Senha</p>
-                        <input type="password">
+                        <input type="password" name="confirmarSenha">
                         <button type="submit">Entrar</button>                    
                     </form>
                 </div>

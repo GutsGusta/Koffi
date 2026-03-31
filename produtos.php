@@ -1,21 +1,19 @@
+<?php
+include 'data.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./produtos.css">
-    <link rel="icon" type="image/x-icon" href="../../imagens/Koffi-Icon.png">
-    <title>Nossos Produtos</title>
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="icon" type="image/x-icon" href="imagens/Koffi-Icon.png">
+    <title><?php echo $nomeloja; ?></title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img src="../../imagens/Koffi-Icon.png" class="imagem-cabecalho">
-        <nav>
-            <span><a href="../../index.html" class="botao-cabecalho">Koffi</a></span>
-            <span><a href="./produtos.html" class="botao-cabecalho">Produtos</a></span>
-            <span><a href="../cadastro-login/login.html" class="botao-cabecalho">Entrar</a></span>
-        </nav>
-    </header>
+    <?php
+        require 'partials/header.php';
+    ?>
 
     <main>
         <div class="titulo-produtos">
@@ -26,31 +24,31 @@
 
         <div class="produtos">
             <article class="card-produto">
-                <img src="../../imagens/cafe-expresso.jpg">
+                <img src="imagens/cafe-expresso.jpg">
                 <h4>Café expresso</h4>
                 <h5>R$4,00</h5>
                 <p>A alma da Koffi em uma dose intensa, com crema aveludada e notas profundas que despertam os sentidos.</p>
-                <a href="../detalhe-produtos/detalhes-cafe.html" class="botao-card">Comprar agora</a>
+                <a href="../detalhe-produtos/detalhes-cafe.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">
-                <img src="../../imagens/Donut.png">
+                <img src="imagens/Donut.png">
                 <h4>Donut</h4>
                 <h5>R$4,00</h5>
                 <p>Uma massa brioche incrivelmente leve e aerada, com o equilíbrio perfeito entre doçura e maciez.</p>
-                <a href="../detalhe-produtos/detalhes-donut.html" class="botao-card">Comprar agora</a>
+                <a href="../detalhe-produtos/detalhes-donut.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">
-                <img src="../../imagens/donut-cafe.jpg">
+                <img src="imagens/donut-cafe.jpg">
                 <h4>Donut + Café expresso</h4>
                 <h5>R$7,00</h5>
                 <p>A harmonização definitiva onde o vigor do café encontra a delicadeza do doce para uma experiência completa.</p>
-                <a href="../detalhe-produtos/detalhes-cafe-donut.html" class="botao-card">Comprar agora</a>
+                <a href="../detalhe-produtos/detalhes-cafe-donut.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">
-                <img src="../../imagens/cappuccino.jpg">
+                <img src="imagens/cappuccino.jpg">
                 <h4>Cappuccino</h4>
                 <h5>R$4,00</h5>
                 <p>Onde o amargor sofisticado do café encontra o abraço doce do donut. Um encontro de sabores que transforma o seu dia.</p>
@@ -60,7 +58,7 @@
 
         <div class="produtos">
             <article class="card-produto">
-                <img src="../../imagens/Croissant.jpg">
+                <img src="imagens/Croissant.jpg">
                 <h4>Croissant</h4>
                 <h5>R$6,00</h5>
                 <p>A medida exata entre o vigor do café e a cremosidade do leite, finalizado com um toque de perfeição.</p>
@@ -68,7 +66,7 @@
             </article>
 
             <article class="card-produto">
-                <img src="../../imagens/Pao-de-queijo.jpg">
+                <img src="imagens/Pao-de-queijo.jpg">
                 <h4>Pão de Queijo</h4>
                 <h5>R$5,00</h5>
                 <p>Crocante por fora e elástico por dentro, com o sabor autêntico do queijo curado em cada mordida.</p>
@@ -76,7 +74,7 @@
             </article>
 
             <article class="card-produto">
-                <img src="../../imagens/misto-quente.jpg">
+                <img src="imagens/misto-quente.jpg">
                 <h4>Misto Quente</h4>
                 <h5>R$7,00</h5>
                 <p>O clássico elevado a outro nível, com pão artesanal selado na manteiga e queijo derretendo.</p>
@@ -84,7 +82,7 @@
             </article>
 
             <article class="card-produto">
-                <img src="../../imagens/mediterranean.jpeg">
+                <img src="imagens/mediterranean.jpeg">
                 <h4>The Mediterranean</h4>
                 <h5>R$7,00</h5>
                 <p>Uma combinação sofisticada de presunto cru e rúcula que equilibra frescor e intensidade.</p>
@@ -94,7 +92,7 @@
 
         <div class="produtos">
             <article class="card-produto">
-                <img src="../../imagens/brownie.jfif">
+                <img src="imagens/brownie.jfif">
                 <h4>Brownie</h4>
                 <h5>R$6,00</h5>
                 <p>Denso, úmido e com aquela casquinha crocante que só um preparo artesanal consegue atingir.</p>
@@ -102,7 +100,7 @@
             </article>
 
             <article class="card-produto">
-                <img src="../../imagens/torta-maca.avif">
+                <img src="imagens/torta-maca.avif">
                 <h4>Torta de Maçã</h4>
                 <h5>R$5,00</h5>
                 <p>Maçãs caramelizadas e especiarias em uma massa dourada que traz o conforto de um abraço.</p>
@@ -110,7 +108,7 @@
             </article>
 
             <article class="card-produto">
-                <img src="../../imagens/cheesecake.avif">
+                <img src="imagens/cheesecake.avif">
                 <h4>Cheesecake</h4>
                 <h5>R$8,00</h5>
                 <p>Cremosa, levemente ácida e finalizada com uma calda artesanal que fecha a experiência com chave de ouro.</p>
@@ -118,7 +116,7 @@
             </article>
 
             <article class="card-produto">
-                <img src="../../imagens/petit-gateau.jpg">
+                <img src="imagens/petit-gateau.jpg">
                 <h4>Petit Gâteau</h4>
                 <h5>R$10,00</h5>
                 <p>Um vulcão de chocolate intenso com centro derretido, servido com sorvete para o contraste perfeito.</p>

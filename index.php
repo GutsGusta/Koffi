@@ -1,21 +1,19 @@
+<?php
+include 'data.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="./imagens/Koffi-Icon.png">
-    <title>Koffi</title>
+    <title><?php echo $nomeloja; ?></title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img src="./imagens/Koffi-Icon.png" class="imagem-cabecalho">
-        <nav>
-            <span><a href="./index.html" class="botao-cabecalho">Koffi</a></span>
-            <span><a href="./paginas/produtos/produtos.html" class="botao-cabecalho">Produtos</a></span>
-            <span><a href="./paginas/cadastro-login/login.html" class="botao-cabecalho">Entrar</a></span>
-        </nav>
-    </header>
+    <?php
+        require 'partials/header.php';
+    ?>
     
     <div class="intro-koffi">
         <div class="titulo">
@@ -41,7 +39,7 @@
                 <h4>Café expresso</h4>
                 <h5>R$4,00</h5>
                 <p>Curto, intenso e com crema aveludada. A tradução mais pura do nosso grão selecionado, moído na hora para despertar seus sentidos.</p>
-                <a href="./paginas/detalhe-produtos/detalhes-cafe.html" class="botao-card">Comprar agora</a>
+                <a href="./paginas/detalhe-produtos/detalhes-cafe.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">
@@ -49,7 +47,7 @@
                 <h4>Donut</h4>
                 <h5>R$4,00</h5>
                 <p>Massa artesanal, macia como nuvem e feita à mão. O equilíbrio perfeito entre a doçura e o conforto que você merece.</p>
-                <a href="./paginas/detalhe-produtos/detalhes-donut.html" class="botao-card">Comprar agora</a>
+                <a href="./paginas/detalhe-produtos/detalhes-donut.php" class="botao-card">Comprar agora</a>
             </article>
 
             <article class="card-produto">
@@ -57,25 +55,25 @@
                 <h4>Donut + Café expresso</h4>
                 <h5>R$7,00</h5>
                 <p>Onde o amargor sofisticado do café encontra o abraço doce do donut. Um encontro de sabores que transforma o seu dia.</p>
-                <a href="./paginas/detalhe-produtos/detalhes-cafe-donut.html" class="botao-card">Comprar agora</a>
+                <a href="./paginas/detalhe-produtos/detalhes-cafe-donut.php" class="botao-card">Comprar agora</a>
             </article>
         </div>
         <div class="parte-formulario">
-            <form class="formulario">
+            <form class="formulario" action="receba-form.php" method="post">
                 <div class="texto-formulario">
                     <h4>Gostou dos nossos produtos?</h4>
                     <h4>Preencha o formulário e fale conosco!</h4>
                 </div>
 
                 <p>Nome</p>
-                <input type="text">
+                <input type="text" name="nome">
 
                 <p>E-mail</p>
-                <input type="email">
+                <input type="email" name="email">
 
                 <p>Telefone</p>
-                <input type="tel"><br>
-                <textarea name="Descrição"></textarea><br>                
+                <input type="tel" name="telefone"><br>
+                <textarea name="descricao"></textarea><br>                
                 <button type="submit">Enviar</button>
                 
             </form>

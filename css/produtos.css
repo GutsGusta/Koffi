@@ -41,7 +41,6 @@ nav {
     justify-content: center;
     flex-direction: row;
     gap: 10px; 
-    
 }
 
 .botao-cabecalho {
@@ -50,35 +49,6 @@ nav {
 
 .botao-cabecalho:hover {
     transform: scale(1.1);
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    color: #F5F5DC;
-    font-size: 50px;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.titulo img {
-    height: 100px;
-} 
-
-.intro-koffi {
-    background-color: #3E2723;
-    color: #F5F5DC;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 30px;
-    font-size: 22px; 
-    padding: 25px;
-    border-bottom: solid 10px #2E4F4F;
 }
 
 .titulo-produtos {
@@ -92,7 +62,7 @@ nav {
 
 .linha-titulo {
     border: solid 2px #2E4F4F;
-    width: 800px;
+    width: 780px;
     margin: 20px;
 }
 
@@ -131,13 +101,17 @@ nav {
 
 .card-produto img{
     width: 350px;
-    height: 50%;
+    height: 300px;
     object-fit: cover;
 }
 
 .card-produto h5{
     color: #F5F5DC;
     margin-bottom: 10px;
+}
+
+.card-produto p {
+    padding: 20px;
 }
 
 .botao-card {
@@ -163,69 +137,6 @@ nav {
 .card-produto h4 {
     text-align: center;
     padding: 20px;
-}
-
-.parte-formulario {
-    background-color: #3E2723;
-    border-top: solid 10px #2E4F4F;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 20px;
-}
-
-.formulario {
-    background-color: #F5F5DC;
-    border: solid 2px #F5F5DC;
-    color: #2E4F4F;
-    border-radius: 10px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.texto-formulario {
-    font-size: 25px;
-    padding: 20px;
-    text-align: center;
-}
-
-.formulario p {
-    padding: 10px;
-}
-
-.formulario form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.formulario input {
-    height: 35px;
-    width: 250px;
-}
-
-.formulario textarea {
-    height: 100px;
-    width: 250px;
-    resize: none;
-}
-
-.formulario button {
-    color: #F5F5DC;
-    background-color: #2E4F4F;
-    border: #2E4F4F;
-    height: 40px;
-    width: 100px;
-    border-radius: 10px;
-    margin: 15px;
-    font-size: 20px;
 }
 
 /*FOOTER*/

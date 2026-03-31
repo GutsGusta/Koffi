@@ -1,22 +1,20 @@
+<?php
+include 'data.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./detalhes-produtos.css">
+    <link rel="stylesheet" href="css/detalhes-produtos.css">
     <link rel="icon" type="image/x-icon" href="../../imagens/Koffi-Icon.png">
-    <title>Donut e Café</title>
+    <title><?php echo $nomeloja; ?></title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img src="../../imagens/Koffi-Icon.png" class="imagem-cabecalho">
-        <nav>
-            <span><a href="../../index.html" class="botao-cabecalho">Koffi</a></span>
-            <span><a href="../produtos/produtos.html" class="botao-cabecalho">Produtos</a></span>
-            <span><a href="../cadastro-login/login.html" class="botao-cabecalho">Entrar</a></span>
-        </nav>
-    </header>
-
+    <?php
+        require 'partials/header.php';
+    ?>
+    
     <main>
         <div class="titulo-produtos">
             <div class="linha-titulo"></div>
@@ -24,7 +22,7 @@
             <div class="linha-titulo"></div>
         </div>
         <div class="pagina-detalhes">
-            <img src="../../imagens/donut-cafe.jpg">
+            <img src="imagens/donut-cafe.jpg">
             <div class="descricao">               
                 <h1>Café + Donut</h1>
                 <p class="descricao-preco"><b>R$7,00</b></p>              
