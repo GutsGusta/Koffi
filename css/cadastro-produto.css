@@ -50,25 +50,6 @@ nav {
     transform: scale(1.1);
 }
 
-.pagina-inteira {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.metade-pagina1 {
-    width: 50%;
-}
-
-.metade-pagina1 img {
-    width: 900px;
-}
-
-.metade-pagina2 {
-    width: 50%;
-}
-
 .formulario {
     display: flex;
     align-items: center;
@@ -96,16 +77,6 @@ nav {
     border-radius: 10px;
 }
 
-.formulario select {
-    width: 300px;
-    height: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    border: solid 2px #2E4F4F;
-    border-radius: 10px;
-}
-
 .formulario button {
     background-color: #2E4F4F;
     color: white;
@@ -122,6 +93,7 @@ nav {
 }
 
 /*FOOTER*/
+
 
 .footer-completo {
     background-color: #2E4F4F;

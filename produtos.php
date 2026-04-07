@@ -1,5 +1,7 @@
 <?php
-include 'data.php';
+require_once 'init.php';
+$categoria_get = isset($_GET['categoria']) ? trim($_GET['categoria']) : '';
+// print_r($_GET);
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -12,10 +14,14 @@ include 'data.php';
 </head>
 <body>
     <?php
-        require 'partials/header.php';
+        require_once 'partials/header.php';
+        if (isset($_GET['produtoadd'])&&$_GET['produtoadd'] === '1') {
+            echo "<script>alert('Produto adicionado com sucesso!');</script>";
+        }
     ?>
 
     <main>
+
         <div class="titulo-produtos">
             <div class="linha-titulo"></div>
                 <h2>Nossos Produtos</h2>
@@ -23,59 +29,35 @@ include 'data.php';
         </div>
 
         <div class="categorias">
-            <a>Todos</a>
+            <a href="produtos.php" class="categorias-botao">Todos</a>
             <?php
                 foreach($categorias as $kcat => $nome) {
-                    print '<a href="#cat-'. $kcat .'">'. $nome .'</a>';
-                };
+                    print '<a href="produtos.php?categoria='. $kcat .'" class="categorias-botao">'. $nome .'</a>';
+                }
             ?>
-            
         </div>
 
         <div class="produtos">
             <?php
-                foreach ($produtos_base as $produto) {
-                    print '<article class="card-produto">
-                <img src="'. $produto['imagem'] .'">
-                <h4>'.$produto['nome'].'</h4>
-                <h5>'.$produto['preco'].'</h5>
-                <p>'.$produto['descricao'].'</p>
-                <a href="detalhes-cafe.php" class="botao-card">Comprar agora</a>
-            </article>
-                    ';
-                };
-            ?>
+                foreach ($_SESSION['produtos'] as $produto) {
 
+                if ($categoria_get === '' || $produto['categoria']===$categoria_get) {
+
+                    print '<article class="card-produto">
+                            <img src="'. $produto['imagem'] .'">
+                            <h4>'. $produto['nome'] .'</h4>
+                            <h5>'. $produto['preco'] .'</h5>
+                            <p>'. $produto['descricao_card'] .'</p>
+                            <a href="detalhes-produtos.php?id='.$produto['id'].'" class="botao-card">Comprar agora</a>
+                        </article>';
+                }
+                }
+            ?>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-completo">
-            <div class="parte-footer">
-                <h4>Koffi</h4>
-                <a href="#">Sobre Nós</a>
-                <a href="#">Termos e Condições</a>
-                <p>Copyright © 2026 Koffi. Todos os direitos reservados.</p>
-            </div>
-
-            <div class="linha-footer" aria-hidden="true"></div>
-
-            <div class="parte-footer">
-                <h4>Contato</h4>
-                <p>Email: assessoria@koffi.com</p>
-                <p>Telefone: (11) 91234-5678</p>
-                <p>Endereço: Rua Boa Vista, 825 - Boa Vista - São Caetano do Sul/SP, 09572-300</p>
-            </div>
-
-            <div class="linha-footer" aria-hidden="true"></div>
-
-            <div class="parte-footer">
-                 <h4>Redes Sociais</h4>
-                 <a href="#">Instagram</a>
-                 <a href="#">Twitter</a>
-                 <a href="#">TikTok</a>
-                 <a href="#">Facebook</a>
-            </div>
-        </div>
-    </footer>
+    <?php
+        require_once 'partials/footer.php';
+    ?>
 </body>
 </html>

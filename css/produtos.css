@@ -56,14 +56,22 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    padding: 15px;
     gap: 20px;
+
 }
 
-.categorias a {
+.categorias-botao {
     background-color: #3E2723;
     color: white;
     border-radius: 10px;
     text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.categorias-botao:hover {
+    transform: scale(1.1);
 }
 
 .titulo-produtos {
